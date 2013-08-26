@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+
+{nocache}
+<title>{if $settings.setting_titlesort == 0}{$settings.setting_title}{/if}{if $settings.setting_titlesort == 1}{$settings.setting_title} | {$thisPage}{/if}{if $settings.setting_titlesort == 2}{$thisPage} | {$settings.setting_title}{/if}{if $settings.setting_titlesort == 3}{$currentPage.page_name} | {$content.content_info} | {$settings.setting_title}{/if}</title>
+<meta name="description" content="{$settings.setting_description}">
+<meta name="keywords" content="{$settings.setting_keywords}">
+<meta name="robots" content="{$settings.setting_robots}">
+<meta name="revisit-after" content="{$settings.setting_revisit}">
+<meta name="copyright" content="{$settings.setting_copyright}">
+<meta name="language" content="{$settings.land_short|lower}">
+<meta name="web_author" content="{$settings.setting_author}">
+<meta http-equiv="content-language" content="{$settings.land_short|lower}">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+{/nocache}
+
+<link rel="stylesheet" href="{$styleUrl}templates/{$settings.setting_template}/style.css" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="{$scriptUrl}menu.js"></script>
+<script type="text/javascript" src="{$scriptUrl}twitter.js"></script>
+<script type="text/javascript" src="{$scriptUrl}slider.class.js"></script>
+<script>
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
+</script>
+
+{if $settings.setting_google != ""}
+{literal}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{/literal}{$settings.setting_google}{literal}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+{/literal}
+{/if}
+	
+</head>
+
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family:arial;
+	background: #00338f; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMzM4ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzAwMTYzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDE2M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+	background: -moz-linear-gradient(top, #00338f 0%, #00163b 25%, #00163b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00338f), color-stop(25%,#00163b), color-stop(100%,#00163b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00338f 0%,#00163b 25%,#00163b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00338f 0%,#00163b 25%,#00163b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00338f 0%,#00163b 25%,#00163b 100%); /* IE10+ */
+	background: linear-gradient(top, #00338f 0%,#00163b 25%,#00163b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00338f', endColorstr='#00163b',GradientType=0 ); /* IE6-8 */	
+}
+
+h3{
+
+}
+
+h2{
+
+}
+
+h1{
+
+}
+
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width:900px;
+}
+
+.menu{
+	height:30px;
+	text-align:center;
+	border: 3px ridge #fed172;
+	width: 896px;
+}
+
+.header{
+	width:100%;
+	height: 150px;
+	margin-left:-20px;
+	background: url('public/images/header.png') no-repeat;
+}
+
+.button{
+	border-right:3px ridge #fed172;
+	float:left;
+	min-width: 100px;
+	height:30px;
+}
+
+.buttonText{
+	position:relative;
+	top:5px;
+	cursor:pointer;
+}
+
+.timer{
+	float:right;
+	margin-right:10px;
+}
+
+.headerBlock{
+	height:20px;
+}
+
+.smallBlock{
+	width: 240px;
+}
+
+.largeBlock{
+	width: 600px;
+}
+
+.wrapBlock{
+	width: 100%;
+	border-left: 1px solid #996415;
+	border-right: 1px solid #996415;
+}
+
+.wrapLeft{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.wrapRight{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.redRoundGradient{
+	background: #c30000; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2MzMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ODAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+	background: -moz-linear-gradient(top, #c30000 1%, #980000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#c30000), color-stop(100%,#980000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c30000 1%,#980000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c30000 1%,#980000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c30000 1%,#980000 100%); /* IE10+ */
+	background: linear-gradient(top, #c30000 1%,#980000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c30000', endColorstr='#980000',GradientType=0 ); /* IE6-8 */
+}
+
+.cornerUp{
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+    -webkit-border-radius-topleft: 10px;
+	-webkit-border-radius-topright: 10px;
+    -khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align:center;
+}
+
+.cornerDown{
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+    -webkit-border-radius-bottomleft: 10px;
+	-webkit-border-radius-bottomright: 10px;
+    -khtml-border-radius-bottomleft: 10px;
+	-khtml-border-radius-bottomright: 10px;
+    border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.contentBlock{
+	color:	#878787;
+	background-color: white;
+	border-left: 1px solid #996415;
+	border-right: 1px solid #996415;
+	border-bottom: 1px solid #996415;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+.deepRed{
+	background-color: #580000;
+}
+
+.normalRed{
+	background-color:red;
+}
+
+.sidebar{
+	width: 90px;
+	min-height:535px;
+	max-height:100%;
+}
+
+.barLeft{
+	position:absolute;
+	float:left;
+	margin-left: -90px;
+	background: url('public/images/sidebar_left.png') repeat-y;
+}
+
+.barRight{
+	float:right;
+	margin-right: -90px;
+	background: url('public/images/sidebar_right.png') repeat-y;
+}
+
+.yellowText{
+	color: #fed172;
+}
+
+.clearAll{
+	clear:both;
+}
+
+</style>
+
+{if $currentBG == 'bg.jpg'}
+	<body style='background-image: url({$imagesUrl}templates/{$settings.setting_template}/{$currentBG});'>
+{else}
+<body style='background-image: url({$uploadsUrl}images/{$currentBG});'>
+{/if}
+<div class="wrapper">
+	<div class="header"></div>
+	<div class="redRoundGradient cornerUp menu yellowText">
+		<div class="button"><span class="buttonText">Home</span></div>
+		<div class="button"><span class="buttonText">Ingezonden</span></div>
+		<div class="button"><span class="buttonText">Club</span></div>
+		<div class="button"><span class="buttonText">Extra</span></div>
+		<div class="button"><span class="buttonText">Contact</span></div>
+		<div class="timer"><span class="buttonText"></span></div>
+	</div>
+	<div class="wrapBlock deepRed">
+		<div class="sidebar barLeft"></div>
+		<div class="sidebar barRight"></div>
+		<div class="wrapLeft">
+			<div class="smallBlock">
+				<div class="redRoundGradient cornerUp yellowText">Agenda</div>
+				<div class="contentBlock"><div id="datepicker"></div></div>
+			</div>
+			<div class="smallBlock">
+				<div class="redRoundGradient cornerUp yellowText">Nieuws</div>
+				<div class="contentBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="wrapRight">
+			<div class="largeBlock">
+				<div class="redRoundGradient cornerUp yellowText">Home</div>
+				<div class="contentBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</div>
+		</div>
+		<div class="clearAll"></div>
+	</div>
+	<div class="redRoundGradient cornerDown menu yellowText">Copyright - Sint en zijn Pieterclub Zeist 2009-2011.  Powered by <a href='http://www.ungahstudios.com/ses-platform/'>SES Platform</a></div>
+</div>
+</body>
+
+</html>

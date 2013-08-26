@@ -1,0 +1,200 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family:arial;
+	background: #00163c repeat-x top left;
+	font-size:12px; 
+}
+
+h3{
+
+}
+
+h2{
+
+}
+
+h1{
+
+}
+
+a:visited{
+	color: #fed172;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #fed172;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a{
+	color: #fed172;
+	text-decoration: none;
+}
+
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width:900px;
+}
+
+.menu{
+	height:30px;
+	text-align:center;
+	border: 3px ridge #fed172;
+	width: 896px;
+}
+
+.header{
+	width:100%;
+	height: 150px;
+	margin-left:-20px;
+	background: url('../../../../public/images/templates/default/header.png') no-repeat;
+}
+
+.button{
+	border-right:3px ridge #fed172;
+	float:left;
+	min-width: 100px;
+	height:30px;
+}
+
+.buttonText{
+	position:relative;
+	top: 7px;
+	cursor:pointer;
+}
+
+.shadow {
+  text-shadow: #000000 2px 2px 5px;
+}
+
+.timer{
+	float:right;
+	margin-right:10px;
+}
+
+.headerBlock{
+	height:20px;
+}
+
+.smallBlock{
+	width: 240px;
+}
+
+.largeBlock{
+	width: 600px;
+}
+
+.wrapBlock{
+	width: 100%;
+	border-left: 1px solid #996415;
+	border-right: 1px solid #996415;
+}
+
+.wrapLeft{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.wrapRight{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.redRoundGradient{
+	background: #c30000; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2MzMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ODAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+	background: -moz-linear-gradient(top, #c30000 1%, #980000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#c30000), color-stop(100%,#980000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c30000 1%,#980000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c30000 1%,#980000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c30000 1%,#980000 100%); /* IE10+ */
+	background: linear-gradient(top, #c30000 1%,#980000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c30000', endColorstr='#980000',GradientType=0 ); /* IE6-8 */
+}
+
+.cornerUp{
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+    -webkit-border-radius-topleft: 10px;
+	-webkit-border-radius-topright: 10px;
+    -khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align:center;
+}
+
+.cornerDown{
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+    -webkit-border-radius-bottomleft: 10px;
+	-webkit-border-radius-bottomright: 10px;
+    -khtml-border-radius-bottomleft: 10px;
+	-khtml-border-radius-bottomright: 10px;
+    border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.contentBlock{
+	color:	#878787;
+	background-color: white;
+	border-left: 1px solid #996415;
+	border-right: 1px solid #996415;
+	border-bottom: 1px solid #996415;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+.deepRed{
+	background-color: #580000;
+}
+
+.normalRed{
+	background-color:red;
+}
+
+.sidebar{
+	width: 90px;
+	min-height:535px;
+	max-height:100%;
+}
+
+.barLeft{
+	position:absolute;
+	float:left;
+	margin-left: -90px;
+	background: url('../../../../public/images/templates/default/sidebar_left.png') repeat-y;
+}
+
+.barRight{
+	float:right;
+	margin-right: -90px;
+	background: url('../../../../public/images/templates/default/sidebar_right.png') repeat-y;
+}
+
+.yellowText{
+	color: #fed172;
+}
+
+.clearAll{
+	clear:both;
+}
+
+.ui-datepicker{
+	width: 210px;
+}
+
+.ui-widget{
+	font-size: 0.9em;
+}
+
+.calendarOptions{
+	display: none;
+}
